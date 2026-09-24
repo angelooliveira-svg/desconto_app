@@ -7,7 +7,8 @@ class PedidoService:
         self.pedidos = []
 
     def adicionar_pedido(self, pedido: Pedido):
-        self.pedido.append(pedido)
+        # CORRIGIDO: Agora usa 'pedidos' no plural para combinar com o __init__
+        self.pedidos.append(pedido)
 
     def processar_pedido(self):
         for pedido in self.pedidos:
