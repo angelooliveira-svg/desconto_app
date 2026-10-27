@@ -1,8 +1,9 @@
-from src.app.entities.pedido import Pedido
-from src.app.entities.desconto import DescontoNormal, DescontoVIP, DescontoPremium
-from src.app.gateways.pedido_gateway import IPedidoGateway
 from src.app.dtos.criar_pedido_input_dto import CriarPedidoInputDTO
 from src.app.dtos.criar_pedido_output_dto import CriarPedidoOutputDTO
+from src.app.entities.desconto import DescontoNormal, DescontoPremium, DescontoVIP
+from src.app.entities.pedido import Pedido
+from src.app.gateways.pedido_gateway import IPedidoGateway
+
 
 class CriarPedido:
     def __init__(self, pedido_gateway: IPedidoGateway):

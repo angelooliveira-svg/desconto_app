@@ -1,6 +1,7 @@
-from src.app.use_cases.criar_pedido import CriarPedido
 from src.app.dtos.criar_pedido_input_dto import CriarPedidoInputDTO
 from src.app.presenters.pedido_presenter import PedidoPresenter
+from src.app.use_cases.criar_pedido import CriarPedido
+
 
 class PedidoController:
     def __init__(self, criar_pedido_use_case: CriarPedido, presenter: PedidoPresenter):

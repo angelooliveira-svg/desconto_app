@@ -1,6 +1,7 @@
 from src.app.entities.pedido import Pedido
-from src.app.gateways.pedido_gateway import IPedidoGateway
 from src.app.frameworks.database.memory_database import MemoryDatabase
+from src.app.gateways.pedido_gateway import IPedidoGateway
+
 
 class MemoryPedidoRepository(IPedidoGateway):
     def __init__(self, database: MemoryDatabase):
